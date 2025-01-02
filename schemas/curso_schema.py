@@ -1,6 +1,6 @@
 from typing import Optional
 
-from pydantic import BaseModel as SCBaseModel
+from pydantic import ConfigDict, BaseModel as SCBaseModel
 
 
 class CursoSchema(SCBaseModel):
@@ -8,6 +8,4 @@ class CursoSchema(SCBaseModel):
     titulo: str
     aulas: int
     horas: int
-
-    class Config:
-        from_atributes = True
+    model_config = ConfigDict(from_atributes=True)

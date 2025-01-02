@@ -1,4 +1,4 @@
-#!/home/joao/PycharmProjects/Curso-SQLAlchemy/cursoFastAPI/.venv/bin/python
+#!/home/joao/PycharmProjects/fastAPI/.venv/bin/python3
 # -*- coding: utf-8 -*-
 import re
 import sys
