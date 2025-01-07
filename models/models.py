@@ -12,3 +12,8 @@ class CursoModel(settings.DBBaseModel):
     horas: int = Column(Integer)
 
 
+class AutorModel(settings.DBBaseModel):
+    __tablename__ = "autor"
+
+    id: int = Column(Integer, primary_key=True, autoincrement=True)
+    nome: str = Column(String(100))
