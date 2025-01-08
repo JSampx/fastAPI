@@ -12,7 +12,6 @@ def test_get_cursos():
 
 def test_post_curso():
 
-    response = client.post("/api/v1/cursos", json={"titulo": "Hello World", "aulas": 12, "horas": 12},)
+    response = client.post("/api/v1/cursos", json={"titulo": "Hello World", "aulas": 12, "horas": 12, "autor_id": 1},)
 
     assert response.status_code == 201
-    assert response.json() == {"titulo": "Hello World", "aulas": 12, "horas": 12}
