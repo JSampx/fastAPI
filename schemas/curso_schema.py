@@ -8,4 +8,7 @@ class CursoSchema(SCBaseModel):
     titulo: str
     aulas: int
     horas: int
-    model_config = ConfigDict(from_atributes=True)
+    autor_id: int
+    # model_config = ConfigDict(from_atributes=True)
+    class Config:
+        orm_mode = True

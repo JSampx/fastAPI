@@ -1,1 +1,1 @@
-from models.models  import CursoModel
+from models.models  import CursoModel, AutorModel
