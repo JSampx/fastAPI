@@ -9,4 +9,4 @@ class AutorSchema(SCBaseModel):
     # cursos: List[CursoSchema] = []
 
     class Config:
-        orm_mode = True
+        from_atributtes = True

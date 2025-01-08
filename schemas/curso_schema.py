@@ -11,4 +11,4 @@ class CursoSchema(SCBaseModel):
     autor_id: int
     # model_config = ConfigDict(from_atributes=True)
     class Config:
-        orm_mode = True
+        from_atributtes = True

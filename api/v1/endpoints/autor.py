@@ -56,7 +56,7 @@ async def get_autor(autor_id: int, db: AsyncSession = Depends(get_session)):
 
 # PUT curso
 @router.put('/{autor_id}', response_model=AutorSchema, status_code=status.HTTP_202_ACCEPTED)
-async def put_curso(autor_id: int, autor: AutorSchema, db: AsyncSession = Depends(get_session)):
+async def put_autor(autor_id: int, autor: AutorSchema, db: AsyncSession = Depends(get_session)):
     async with db as session:
         query = select(AutorModel).filter(AutorModel.id == autor_id)
         result = await session.execute(query)
@@ -75,7 +75,7 @@ async def put_curso(autor_id: int, autor: AutorSchema, db: AsyncSession = Depend
 
 # DELETE curso
 @router.delete('/{autor_id}', status_code=status.HTTP_204_NO_CONTENT)
-async def delete_curso(autor_id: int, db: AsyncSession = Depends(get_session)):
+async def delete_autor(autor_id: int, db: AsyncSession = Depends(get_session)):
     async with db as session:
         query = select(AutorModel).filter(AutorModel.id == autor_id)
         result = await session.execute(query)
