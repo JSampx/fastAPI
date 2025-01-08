@@ -1,4 +1,4 @@
-# fastAPI - Simple project made in async Python lib.
+# fastAPI - Simple project made with async Python lib.
 
 This is a mini project made by myself for learning asyncronous API design with:
 Python
