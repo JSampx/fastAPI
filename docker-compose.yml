@@ -9,6 +9,7 @@ services:
     restart: always
 
   api:
+    container_name: fastapi_container
     build:
       context: .
     ports:
