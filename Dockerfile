@@ -6,4 +6,5 @@ COPY . .
 RUN pip install -r requirements.txt
 # RUN python3 criar_tabelas.py
 
-CMD ["python3", "main.py"]
+#CMD ["python3", "criar_tabelas.py"]
+#CMD ["python3", "main.py"]

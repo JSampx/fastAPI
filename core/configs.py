@@ -13,7 +13,7 @@ class Settings(BaseSettings):
     Configurações gerais usadas na aplicação
     """
     API_V1_STR: str = '/api/v1'
-    DB_URL: str = "postgresql+asyncpg://postgres:postgres@localhost:5432/fastapi"
+    DB_URL: str = "postgresql+asyncpg://postgres:postgres@postgres:5432/fastapi"
     # DB_URL: str = "sqlite+aiosqlite:///faculdade.sqlite"
     DBBaseModel: ClassVar[DeclarativeMeta] = declarative_base()
     TEMPLATES: ClassVar[Jinja2Templates] = Jinja2Templates(directory='templates')

@@ -4,6 +4,10 @@
     postgres:
       image: postgres:15.10-alpine3.20
       container_name: postgres
+      #ports:
+       # - '5432:5432'
+      volumes:
+        - fastapi_pg:/var/lib/postgresql/fastapi_data
       environment:
         POSTGRES_PASSWORD: postgres
         POSTGRES_USER: postgres
@@ -22,3 +26,5 @@
         - 8000:8000
       restart: on-failure
 
+  volumes:
+    fastapi_pg:
