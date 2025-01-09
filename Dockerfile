@@ -4,5 +4,6 @@ WORKDIR /fastapi
 COPY . .
 
 RUN pip install -r requirements.txt
+# RUN python3 criar_tabelas.py
 
 CMD ["python3", "main.py"]
