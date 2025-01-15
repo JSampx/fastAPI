@@ -23,5 +23,5 @@ After that, open the web browser at <localhost:8000>.
 
 
 #### Url
-With the initial page opened, you'll see a simple JSON 
-The root url for our api is [localhost:8000](/api/v1/cursos).
+With the initial page opened, you'll see a simple JSON view.
+The root url for our api is [/api/v1/cursos](localhost:8000/api/v1/cursos).
